@@ -20,21 +20,21 @@ def exibir_imagem_estatica(canvas, caminho_imagem):
 
 def torre_de_hanoi():
     try:
-        torreDeHanoi = os.path.join("TorreDeHanoi", "main.py")
+        torreDeHanoi = os.path.join("games", "TorreDeHanoi", "main.py")
         subprocess.Popen(["python", torreDeHanoi])
     except Exception as e:
         messagebox.showerror("Erro", f"Não foi possível iniciar o jogo Torre de Hanoi.\nErro: {e}")
 
 def tiro_ao_alvo():
     try:
-        tiroAoAlvo = os.path.join("TiroAoAlvo", "main.py")
+        tiroAoAlvo = os.path.join("games", "TiroAoAlvo", "main.py")
         subprocess.Popen(["python", tiroAoAlvo])
     except Exception as e:
         messagebox.showerror("Erro", f"Não foi possível iniciar o jogo Tiro ao Alvo.\nErro: {e}")
         
 def passa_repassa():
     try:
-        passaRepassa = os.path.join("PassaRepassa", "main.py")
+        passaRepassa = os.path.join("games", "PassaRepassa", "main.py")
         subprocess.Popen(["python", passaRepassa])
     except Exception as e:
         messagebox.showerror("Erro", f"Não foi possível iniciar o jogo Passa Repassa.\nErro: {e}")

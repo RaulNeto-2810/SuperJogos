@@ -7,7 +7,7 @@ window.geometry("1280x720")
 window.title("Passa Repassa")
 
 # Ícone personalizado
-icon = tk.PhotoImage(file="PassaRepassa/Assets/Images/Logo.png")
+icon = tk.PhotoImage(file="games/PassaRepassa/Assets/Images/Logo.png")
 window.iconphoto(False, icon)
 
 # Criação do canvas principal
@@ -92,24 +92,24 @@ questions_answers = {
 # Referências de imagens
 paths = {
     "backgroundImage": [
-        "PassaRepassa/Assets/Images/InicialMenu.png",
-        "PassaRepassa/Assets/Images/Player1Screen.png",
-        "PassaRepassa/Assets/Images/Player2Screen.png",
-        "PassaRepassa/Assets/Images/TimeOutScreen.png",
-        "PassaRepassa/Assets/Images/LoseScreen.png",
-        "PassaRepassa/Assets/Images/WinScreen.png",
-        "PassaRepassa/Assets/Images/ProtectionScreen.png",
-        "PassaRepassa/Assets/Images/DrawScreen.png",
-        "PassaRepassa/Assets/Images/Player1WinScreen.png",
-        "PassaRepassa/Assets/Images/Player2WinScreen.png"
+        "games/PassaRepassa/Assets/Images/InicialMenu.png",
+        "games/PassaRepassa/Assets/Images/Player1Screen.png",
+        "games/PassaRepassa/Assets/Images/Player2Screen.png",
+        "games/PassaRepassa/Assets/Images/TimeOutScreen.png",
+        "games/PassaRepassa/Assets/Images/LoseScreen.png",
+        "games/PassaRepassa/Assets/Images/WinScreen.png",
+        "games/PassaRepassa/Assets/Images/ProtectionScreen.png",
+        "games/PassaRepassa/Assets/Images/DrawScreen.png",
+        "games/PassaRepassa/Assets/Images/Player1WinScreen.png",
+        "games/PassaRepassa/Assets/Images/Player2WinScreen.png"
     ],
     "icons": [
-        "PassaRepassa/Assets/Images/PlayButton.png",
-        "PassaRepassa/Assets/Images/Shield.png",
-        "PassaRepassa/Assets/Images/Rocket.png",
-        "PassaRepassa/Assets/Images/Clock.png",
-        "PassaRepassa/Assets/Images/SubmitArrow.png",
-        "PassaRepassa/Assets/Images/ResumeButton.png"
+        "games/PassaRepassa/Assets/Images/PlayButton.png",
+        "games/PassaRepassa/Assets/Images/Shield.png",
+        "games/PassaRepassa/Assets/Images/Rocket.png",
+        "games/PassaRepassa/Assets/Images/Clock.png",
+        "games/PassaRepassa/Assets/Images/SubmitArrow.png",
+        "games/PassaRepassa/Assets/Images/ResumeButton.png"
     ]
 }
 

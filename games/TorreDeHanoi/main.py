@@ -15,7 +15,7 @@ clock = pygame.time.Clock()
 
 # Função que define a fonte
 def text(size=36, bold=False):
-    font_path = r"TorreDeHanoi\fonte\arial.ttf"
+    font_path = r"games\TorreDeHanoi\fonte\arial.ttf"
     fonte_style = pygame.font.Font(font_path, size)
     if bold:
         fonte_style.set_bold(True)
@@ -56,7 +56,7 @@ def tela_inicio(tela, clock):
     posicao_instrucao = (tela.get_width() // 2 - texto_instrucao.get_width() // 2, tela.get_height() // 2)
 
     # Carregamento do logo
-    logo_path = r"TorreDeHanoi\images\Torre_Hanoi_Text_Logo.png"
+    logo_path = r"games\TorreDeHanoi\images\Torre_Hanoi_Text_Logo.png"
     logo = pygame.image.load(logo_path).convert_alpha()
     posicao_titulo = (tela.get_width() // 2 - logo.get_width() // 2, tela.get_height() // 4)
 
@@ -138,28 +138,28 @@ tela_inicio(tela, clock)
 
 # Carregando os elementos:
 # Criando a base:
-superficie_base = pygame.image.load(r"TorreDeHanoi/images/base.jpg").convert()
+superficie_base = pygame.image.load(r"games/TorreDeHanoi/images/base.jpg").convert()
 superficie_base = pygame.transform.scale(superficie_base, (1380, 30))
 
 # Criando as hastes:
-haste1 = Haste(pygame.image.load(r"TorreDeHanoi/images/madeira.jpg").convert(), 300, 760)
-haste2 = Haste(pygame.image.load(r"TorreDeHanoi/images/madeira.jpg").convert(), 700, 760)
-haste3 = Haste(pygame.image.load(r"TorreDeHanoi/images/madeira.jpg").convert(), 1100, 760)
+haste1 = Haste(pygame.image.load(r"games/TorreDeHanoi/images/madeira.jpg").convert(), 300, 760)
+haste2 = Haste(pygame.image.load(r"games/TorreDeHanoi/images/madeira.jpg").convert(), 700, 760)
+haste3 = Haste(pygame.image.load(r"games/TorreDeHanoi/images/madeira.jpg").convert(), 1100, 760)
 
 # Agrupando as hastes em uma tupla:
 hastes = (haste1, haste2, haste3)
 
 # Criando as anilhas:
-anilha0 = Anilha(0, pygame.image.load(r"TorreDeHanoi/images/retanguloAzul.jpg").convert())
-anilha1 = Anilha(1, pygame.image.load(r"TorreDeHanoi/images/retanguloAzulCiano.jpg").convert())
-anilha2 = Anilha(2, pygame.image.load(r"TorreDeHanoi/images/retanguloAmarelo.jpg").convert())
-anilha3 = Anilha(3, pygame.image.load(r"TorreDeHanoi/images/retanguloVermelho.jpg").convert())
-anilha4 = Anilha(4, pygame.image.load(r"TorreDeHanoi/images/retanguloVerde.jpg").convert())
-anilha5 = Anilha(5, pygame.image.load(r"TorreDeHanoi/images/retanguloRosa.jpg").convert())
-anilha6 = Anilha(6, pygame.image.load(r"TorreDeHanoi/images/retanguloRoxo.jpg").convert())
-anilha7 = Anilha(7, pygame.image.load(r"TorreDeHanoi/images/retangulocinza.jpg").convert())
-anilha8 = Anilha(8, pygame.image.load(r"TorreDeHanoi/images/retanguloLaranja.jpg").convert())
-anilha9 = Anilha(9, pygame.image.load(r"TorreDeHanoi/images/retanguloBege.jpg").convert())
+anilha0 = Anilha(0, pygame.image.load(r"games/TorreDeHanoi/images/retanguloAzul.jpg").convert())
+anilha1 = Anilha(1, pygame.image.load(r"games/TorreDeHanoi/images/retanguloAzulCiano.jpg").convert())
+anilha2 = Anilha(2, pygame.image.load(r"games/TorreDeHanoi/images/retanguloAmarelo.jpg").convert())
+anilha3 = Anilha(3, pygame.image.load(r"games/TorreDeHanoi/images/retanguloVermelho.jpg").convert())
+anilha4 = Anilha(4, pygame.image.load(r"games/TorreDeHanoi/images/retanguloVerde.jpg").convert())
+anilha5 = Anilha(5, pygame.image.load(r"games/TorreDeHanoi/images/retanguloRosa.jpg").convert())
+anilha6 = Anilha(6, pygame.image.load(r"games/TorreDeHanoi/images/retanguloRoxo.jpg").convert())
+anilha7 = Anilha(7, pygame.image.load(r"games/TorreDeHanoi/images/retangulocinza.jpg").convert())
+anilha8 = Anilha(8, pygame.image.load(r"games/TorreDeHanoi/images/retanguloLaranja.jpg").convert())
+anilha9 = Anilha(9, pygame.image.load(r"games/TorreDeHanoi/images/retanguloBege.jpg").convert())
 Anilhas = [anilha9, anilha8, anilha7, anilha6, anilha5, anilha4, anilha3, anilha2, anilha1, anilha0]
 # Stack das anilhas:
 Quant = selecionar_num_anilhas(tela, clock)
