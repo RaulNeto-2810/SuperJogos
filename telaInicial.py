@@ -31,6 +31,13 @@ def tiro_ao_alvo():
         subprocess.Popen(["python", tiroAoAlvo])
     except Exception as e:
         messagebox.showerror("Erro", f"Não foi possível iniciar o jogo Tiro ao Alvo.\nErro: {e}")
+        
+def passa_repassa():
+    try:
+        passaRepassa = os.path.join("PassaRepassa", "main.py")
+        subprocess.Popen(["python", passaRepassa])
+    except Exception as e:
+        messagebox.showerror("Erro", f"Não foi possível iniciar o jogo Passa Repassa.\nErro: {e}")
 
 def sair():
     janela.quit()
@@ -42,6 +49,8 @@ def selecionar_jogo(indice):
     elif indice == 1:
         tiro_ao_alvo()
     elif indice == 2:
+        passa_repassa()
+    elif indice == 3:
         sair()
 
 def menuInicial():
@@ -75,10 +84,10 @@ def menuInicial():
     canvas.create_image(512, 50, image=imagem_titulo_tk, anchor="n")
     canvas.image_titulo = imagem_titulo_tk  # Mantém uma referência para evitar que a imagem seja coletada pelo garbage collector
 
-    jogos = ["Torre de Hanoi", "Tiro ao Alvo", "Sair"]
+    jogos = ["Torre de Hanoi", "Tiro ao Alvo", "Passa Repassa","Sair"]
     botoes = []
-    largura_botao = 200  #
-    altura_botao = 50  #
+    largura_botao = 200
+    altura_botao = 50
 
     for i, jogo in enumerate(jogos):
         botao = tk.Button(
