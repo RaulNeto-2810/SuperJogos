@@ -115,20 +115,20 @@ def menuInicial():
           event: O evento de teclado.
         """
         nonlocal selecionado
-        if event.keysym == "Down":  # Se a tecla pressionada for seta para baixo
+        if event.keysym == "Down":  # Seta para baixo
             selecionado = (selecionado + 1) % len(botoes)
             atualizar_botoes()
-        elif event.keysym == "Up":  # Se a tecla pressionada for seta para cima
+        elif event.keysym == "Up":  # Seta para cima
             selecionado = (selecionado - 1) % len(botoes)
             atualizar_botoes()
-        elif event.keysym == "Return":  # Se a tecla pressionada for Enter
+        elif event.keysym == "Return":  # Tecla Enter
             selecionar_jogo(selecionado)
 
     def atualizar_botoes():
         for i, botao in enumerate(botoes):
             if i == selecionado:  # Se o botão atual for o selecionado
                 botao.config(bg="#A9A9A9")
-            else:  # Caso contrário
+            else:  
                 botao.config(bg="#808080")
 
     selecionado = 0
